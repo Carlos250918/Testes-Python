@@ -5,8 +5,10 @@ from time import sleep
 chrome = webdriver.Chrome()
 chrome.get('https://books.toscrape.com/')
 sleep(1)
+book = chrome.find_element(By .XPATH,'/html/body/div/div/div/div/section/div[2]/ol/li[1]/article/h3/a')
 
-titulo = chrome.find_element(By.XPATH,'../../media/cache/fe/72/fe72f0532301ec28892ae79a629a293c.jpg' alt="A Light in the Attic">)
+titulo = chrome.find_element(By.XPATH,'/html/body/div/div/div[2]/div[2]/article/div[1]/div[2]/h1')
 print(titulo.get_attribute('title'))
+
 
 sleep(10)
