@@ -1,6 +1,8 @@
-# Importando webdriver da biblioteca selenium
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from time import sleep
 
+chrome = webdriver.Chrome()
 chrome.get('https://books.toscrape.com/')
 sleep(1)
 
